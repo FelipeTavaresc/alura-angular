@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnDestroy } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { Pensamento } from './pensamento';
 import { Observable } from 'rxjs';
@@ -17,6 +17,11 @@ export class PensamentoService {
 
   criar(pensamento: Pensamento): Observable<Pensamento>{
     return this.http.post<Pensamento>(this.API, pensamento);
+  }
+
+  editar(pensamento: Pensamento): Observable<Pensamento>{
+    const url = `${this.API}/${pensamento.id}`;
+    return this.http.put<Pensamento>(url, pensamento);
   }
 
   excluir(id: number): Observable<Pensamento>{

@@ -1,9 +1,9 @@
 {
   "pensamento": [
     {
-      "conteudo": "Asp.NET",
-      "autoria": "Microsoft",
-      "modelo": "modelo1",
+      "conteudo": ".NET 8",
+      "autoria": "Microsoft ",
+      "modelo": "modelo2",
       "id": 3
     },
     {
@@ -11,6 +11,18 @@
       "autoria": "Microsoft",
       "modelo": "modelo1",
       "id": 4
+    },
+    {
+      "conteudo": "Angular 14",
+      "autoria": "Google",
+      "modelo": "modelo3",
+      "id": 5
+    },
+    {
+      "conteudo": "Javascript",
+      "autoria": "Dev",
+      "modelo": "modelo1",
+      "id": 6
     }
   ]
 }

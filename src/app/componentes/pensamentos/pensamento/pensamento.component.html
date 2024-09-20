@@ -5,8 +5,8 @@
     <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
 
     <div class="acoes">
-        <button class="botao-editar">
-            <img src="/assets/imagens/icone-editar.png" alt="Ícone editar">
+        <button class="botao-editar" routerLink="/pensamentos/editarPensamento/{{pensamento.id}}" alt="Ícone editar">
+            <img src="/assets/imagens/icone-editar.png">
         </button>
         <button class="botao-excluir" routerLink="/pensamentos/excluirPensamento/{{pensamento.id}}">
             <img src="/assets/imagens/icone-excluir.png" alt="Ícone excluir">
